@@ -2,6 +2,7 @@ package krazyminer001.absorber;
 
 import krazyminer001.absorber.datagen.ModBlockTagProvider;
 import krazyminer001.absorber.datagen.ModLootTableGenerator;
+import krazyminer001.absorber.datagen.ModRecipeProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
@@ -12,5 +13,6 @@ public class TheAbsorberDataGenerator implements DataGeneratorEntrypoint {
 
 		pack.addProvider(ModLootTableGenerator::new);
 		pack.addProvider(ModBlockTagProvider::new);
+		pack.addProvider(ModRecipeProvider::new);
 	}
 }
