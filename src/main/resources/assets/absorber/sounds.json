@@ -1,0 +1,102 @@
+{
+  "block.absorber.absorb": {
+    "subtitle": "subtitles.absorber.block.absorber.absorb",
+    "sounds": [
+      "absorber:block/absorber/absorb1",
+      "absorber:block/absorber/absorb2",
+      "absorber:block/absorber/absorb3"
+    ]
+  },
+  "block.absorber.break": {
+    "subtitle": "subtitles.block.generic.break",
+    "sounds": [
+      "absorber:block/absorber/break1",
+      "absorber:block/absorber/break2",
+      "absorber:block/absorber/break3",
+      "absorber:block/absorber/break4"
+    ]
+  },
+  "block.absorber.place": {
+    "subtitle": "subtitles.block.generic.place",
+    "sounds": [
+      "absorber:block/absorber/break1",
+      "absorber:block/absorber/break2",
+      "absorber:block/absorber/break3",
+      "absorber:block/absorber/break4"
+    ]
+  },
+  "block.absorber.hit": {
+    "subtitle": "subtitles.block.generic.hit",
+    "sounds": [
+      "absorber:block/absorber/break1",
+      "absorber:block/absorber/break2",
+      "absorber:block/absorber/break3",
+      "absorber:block/absorber/break4"
+    ]
+  },
+  "block.absorber.fall": {
+    "subtitle": "",
+    "sounds": [
+      "absorber:block/absorber/break1",
+      "absorber:block/absorber/break2",
+      "absorber:block/absorber/break3",
+      "absorber:block/absorber/break4"
+    ]
+  },
+  "block.absorber.step": {
+    "subtitle": "subtitles.block.generic.footsteps",
+    "sounds": [
+      "absorber:block/absorber/step1",
+      "absorber:block/absorber/step2",
+      "absorber:block/absorber/step3",
+      "absorber:block/absorber/step4",
+      "absorber:block/absorber/step5",
+      "absorber:block/absorber/step6"
+    ]
+  },
+  "block.filled_absorber.break": {
+    "subtitle": "subtitles.block.generic.break",
+    "sounds": [
+      "absorber:block/absorber/filled_absorber/break1",
+      "absorber:block/absorber/filled_absorber/break2",
+      "absorber:block/absorber/filled_absorber/break3",
+      "absorber:block/absorber/filled_absorber/break4"
+    ]
+  },
+  "block.filled_absorber.place": {
+    "subtitle": "subtitles.block.generic.place",
+    "sounds": [
+      "absorber:block/absorber/filled_absorber/break1",
+      "absorber:block/absorber/filled_absorber/break2",
+      "absorber:block/absorber/filled_absorber/break3",
+      "absorber:block/absorber/filled_absorber/break4"
+    ]
+  },
+  "block.filled_absorber.hit": {
+    "subtitle": "subtitles.block.generic.hit",
+    "sounds": [
+      "absorber:block/absorber/filled_absorber/break1",
+      "absorber:block/absorber/filled_absorber/break2",
+      "absorber:block/absorber/filled_absorber/break3",
+      "absorber:block/absorber/filled_absorber/break4"
+    ]
+  },
+  "block.filled_absorber.fall": {
+    "subtitle": "",
+    "sounds": [
+      "absorber:block/absorber/filled_absorber/break1",
+      "absorber:block/absorber/filled_absorber/break2",
+      "absorber:block/absorber/filled_absorber/break3",
+      "absorber:block/absorber/filled_absorber/break4"
+    ]
+  },
+  "block.filled_absorber.step": {
+    "subtitle": "subtitles.block.generic.footsteps",
+    "sounds": [
+      "absorber:block/absorber/filled_absorber/step1",
+      "absorber:block/absorber/filled_absorber/step2",
+      "absorber:block/absorber/filled_absorber/step3",
+      "absorber:block/absorber/filled_absorber/step4"
+    ]
+  }
+}

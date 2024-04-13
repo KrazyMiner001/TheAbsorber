@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "absorber:block/absorber_top",
+    "east": "absorber:block/absorber",
+    "north": "absorber:block/absorber",
+    "particle": "absorber:block/absorber",
+    "south": "absorber:block/absorber",
+    "up": "absorber:block/absorber_top",
+    "west": "absorber:block/absorber"
+  }
+}
