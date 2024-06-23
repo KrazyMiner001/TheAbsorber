@@ -22,7 +22,7 @@ public class ModSounds {
     public static final SoundEvent BLOCK_FILLED_ABSORBER_STEP = registerSound("block.filled_absorber.step");
 
     private static SoundEvent registerSound(String name) {
-        Identifier soundId = new Identifier(TheAbsorber.ModID, name);
+        Identifier soundId = Identifier.of(TheAbsorber.ModID, name);
         return Registry.register(Registries.SOUND_EVENT, soundId, SoundEvent.of(soundId));
     }
 

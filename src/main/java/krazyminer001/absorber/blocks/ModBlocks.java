@@ -4,7 +4,6 @@ import krazyminer001.absorber.TheAbsorber;
 import krazyminer001.absorber.blocks.custom.AbsorberBlock;
 import krazyminer001.absorber.blocks.custom.WetAbsorberBlock;
 import krazyminer001.absorber.sounds.ModSoundGroups;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -22,12 +21,12 @@ public class ModBlocks {
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, new Identifier(TheAbsorber.ModID, name), block);
+        return Registry.register(Registries.BLOCK, Identifier.of(TheAbsorber.ModID, name), block);
     }
 
     private static Item registerBlockItem(String name, Block block) {
-        return Registry.register(Registries.ITEM, new Identifier(TheAbsorber.ModID, name),
-                new BlockItem(block, new FabricItemSettings()));
+        return Registry.register(Registries.ITEM, Identifier.of(TheAbsorber.ModID, name),
+                new BlockItem(block, new Item.Settings()));
     }
 
     public static void registerModBlocks() {
