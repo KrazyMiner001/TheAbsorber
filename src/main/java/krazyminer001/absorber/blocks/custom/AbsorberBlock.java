@@ -5,9 +5,18 @@ import krazyminer001.absorber.blocks.ModBlocks;
 import krazyminer001.absorber.sounds.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.PotionContentsComponent;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.potion.Potions;
 import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.util.Hand;
+import net.minecraft.util.ItemActionResult;
+import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
@@ -88,5 +97,26 @@ public class AbsorberBlock extends Block {
                 }
             }
         }) > 1;
+    }
+
+    @Override
+    protected ItemActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+        if (player.getStackInHand(hand).getItem() == Items.WATER_BUCKET) {
+            world.setBlockState(pos, ModBlocks.FILLED_ABSORBER.getDefaultState(), 3);
+            player.setStackInHand(hand, new ItemStack(Items.BUCKET));
+            return ItemActionResult.CONSUME_PARTIAL;
+        } else if (player.getStackInHand(hand).getItem() == Items.POTION) {
+            PotionContentsComponent effects = player.getStackInHand(hand).get(DataComponentTypes.POTION_CONTENTS);
+            if (effects == null) return ItemActionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
+            if (effects.potion().isPresent()) {
+                if (effects.potion().get() == Potions.WATER) {
+                    world.setBlockState(pos, ModBlocks.FILLED_ABSORBER.getDefaultState().with(WetAbsorberBlock.LEVEL, 1), 3);
+                    player.getStackInHand(hand).decrement(1);
+                    player.giveItemStack(new ItemStack(Items.GLASS_BOTTLE));
+                    return ItemActionResult.CONSUME_PARTIAL;
+                }
+            }
+        }
+        return ItemActionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
     }
 }
