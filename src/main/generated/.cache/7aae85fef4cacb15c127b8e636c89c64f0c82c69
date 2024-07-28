@@ -1,3 +1,3 @@
-// 1.20.4	2024-04-19T19:34:13.5549887	The Absorber/Tags for minecraft:block
-ed9d47529c1fa9a840625239dc6c095e898e8d8e data\minecraft\tags\blocks\mineable\pickaxe.json
-ed9d47529c1fa9a840625239dc6c095e898e8d8e data\minecraft\tags\blocks\needs_stone_tool.json
+// 1.21	2024-07-28T11:33:01.024521759	The Absorber/Tags for minecraft:block
+cbe1646122098df6b29d27966337ce30270894f6 data/minecraft/tags/block/needs_stone_tool.json
+cbe1646122098df6b29d27966337ce30270894f6 data/minecraft/tags/block/mineable/pickaxe.json

@@ -1,3 +1,3 @@
-// 1.20.4	2024-04-19T19:34:13.5558657	The Absorber/Block Loot Tables
-a3c386cc7ea23982072a51f6549751fd40654385 data\absorber\loot_tables\blocks\filled_absorber.json
-23df99f28227eba1a02fea92122cac64db20db33 data\absorber\loot_tables\blocks\absorber.json
+// 1.21	2024-07-28T11:33:01.025513454	The Absorber/Block Loot Tables
+a3c386cc7ea23982072a51f6549751fd40654385 data/absorber/loot_table/blocks/filled_absorber.json
+23df99f28227eba1a02fea92122cac64db20db33 data/absorber/loot_table/blocks/absorber.json
