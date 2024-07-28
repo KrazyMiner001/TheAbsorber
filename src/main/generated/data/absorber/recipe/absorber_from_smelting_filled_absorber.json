@@ -6,5 +6,7 @@
   "ingredient": {
     "item": "absorber:filled_absorber"
   },
-  "result": "absorber:absorber"
+  "result": {
+    "id": "absorber:absorber"
+  }
 }
