@@ -29,8 +29,8 @@
 		"absorber.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.9",
-		"minecraft": "~1.20.4",
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
 	},

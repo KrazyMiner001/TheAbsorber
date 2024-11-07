@@ -17,12 +17,6 @@ public class WetAbsorberBlock extends Block {
         super(settings);
     }
 
-    public static final MapCodec<WetAbsorberBlock> CODEC = createCodec(WetAbsorberBlock::new);
-
-    public MapCodec<WetAbsorberBlock> getCodec() {
-        return CODEC;
-    }
-
     public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
         if (world.getDimension().ultrawarm()) {
             world.setBlockState(pos, ModBlocks.ABSORBER.getDefaultState(), 3);

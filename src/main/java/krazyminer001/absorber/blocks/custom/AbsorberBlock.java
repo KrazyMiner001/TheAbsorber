@@ -13,7 +13,6 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 
 public class AbsorberBlock extends Block {
-    public static final MapCodec<AbsorberBlock> CODEC = createCodec(AbsorberBlock::new);
     public static final int ABSORB_RADIUS = 10;
     public static final int ABSORB_LIMIT = 128;
 
@@ -22,10 +21,6 @@ public class AbsorberBlock extends Block {
     }
 
     private static final Direction[] DIRECTIONS = Direction.values();
-
-    public MapCodec<AbsorberBlock> getCodec() {
-        return CODEC;
-    }
 
     @Override
     public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
@@ -67,7 +62,7 @@ public class AbsorberBlock extends Block {
                 } else {
                     Block block = blockState.getBlock();
                     if (block instanceof FluidDrainable fluidDrainable) {
-                        if (!fluidDrainable.tryDrainFluid(null, world, currentPos, blockState).isEmpty()) {
+                        if (!fluidDrainable.tryDrainFluid(world, currentPos, blockState).isEmpty()) {
                             return true;
                         }
                     }
