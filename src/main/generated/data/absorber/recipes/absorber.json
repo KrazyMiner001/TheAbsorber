@@ -19,5 +19,6 @@
   ],
   "result": {
     "item": "absorber:absorber"
-  }
+  },
+  "show_notification": true
 }

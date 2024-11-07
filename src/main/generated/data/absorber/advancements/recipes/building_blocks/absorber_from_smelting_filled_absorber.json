@@ -22,13 +22,14 @@
   },
   "requirements": [
     [
-      "has_the_recipe",
-      "has_filled_absorber"
+      "has_filled_absorber",
+      "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
       "minecraft:absorber_from_smelting_filled_absorber"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }
